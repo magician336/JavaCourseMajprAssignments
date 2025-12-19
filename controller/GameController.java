@@ -209,7 +209,6 @@ public class GameController {
     private void sendChat(String text) {
         if (out != null) {
             out.println("CHAT:" + text);
-            view.appendChat("我: " + text);
         } else {
             view.appendChat("尚未连接到服务器，无法发送消息。");
         }

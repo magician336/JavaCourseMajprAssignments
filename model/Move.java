@@ -5,6 +5,8 @@ import java.io.Serializable;
 /**
  * 棋步记录
  */
+
+// Serializable的意思就是可序列化
 public class Move implements Serializable {
     public final int x, y;
     public final int color; // 1 = black, 2 = white

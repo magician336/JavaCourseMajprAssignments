@@ -32,6 +32,7 @@ public class GameView {
     private JTextField chatInput;
     private JButton undoBtn, replayBtn, resetBtn, sendBtn;
 
+    // 定义回调引用
     private BoardClickListener boardListener;
     private ChatSendListener chatListener;
     private ControlListener controlListener;

@@ -1,9 +1,5 @@
 package client;
 
-import controller.GameController;
-import controller.OfflineGameController;
-import model.GameModel;
-import view.GameView;
 
 /**
  * 客户端入口：支持在线模式（连接服务器）与离线模式（本地双人）。
@@ -33,7 +29,7 @@ public class ClientApp {
             return;
         }
 
-        // 在线模式 (原有用法)
+        // 在线模式
         if (args.length < 3) {
             System.out.println("在线模式用法: java client.ClientApp <serverHost> <port> <playerName>");
             System.exit(1);

@@ -1,6 +1,14 @@
 package model;
 
+/* 
+ * 引入 Java Bean 的属性变化监听器接口，
+ * 供Controller注册来接收模型变化通知。
+ */
 import java.beans.PropertyChangeListener;
+/*
+ * 用于管理和分发 `PropertyChangeEvent` 
+ * 给所有注册的监听者（实现观察者模式的工具类）。
+ */
 import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -92,6 +100,7 @@ public class GameModel {
         return false;
     }
 
+    // dx, dy: 步长
     private int countDir(int x, int y, int dx, int dy, int color) {
         int c = 0;
         int nx = x + dx, ny = y + dy;
